@@ -1,0 +1,94 @@
+/* Universal Selector */
+* {
+  font-size: 16px;
+}
+
+body {
+    box-sizing: border-box;
+    background: url(/resources/images/sunset.jpg), hsla(33, 100%, 88%, 0.5);
+    background-size: cover;
+    background-position: 85%;
+    background-blend-mode: overlay;
+}
+
+/* Navigation */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 100%;
+    padding: 2rem 0;
+    border-bottom: 3px solid white;
+}
+
+.logo {
+    height: 7rem;
+    width: auto;
+}
+
+/*.main {
+ background: hsla(33, 100%, 88%, 0.5);
+ background-blend-mode: overlay;
+}*/
+
+.grid {
+    display: grid;
+    position: relative;
+    min-height: 100vh;
+    place-items: center;
+}
+
+.content {
+    display: grid;
+    position: relative;
+    width: 75%;
+    grid-template-areas: 
+            "verse focus"
+            "verse action";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: transparent;
+    gap: .75rem;
+    border: none;
+}
+
+.content h1 {
+    font-size: 1.25rem;
+    margin: 1rem;
+    background-color: none;
+}
+
+.box {
+    background-color: hsla(275, 100%, 25%, 1);
+    color:azure;
+    border: 2px solid hsla(275, 100%, 25%, 1);
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px hsla(275, 100%, 25%, .5);
+}
+.box h1 {
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.content .verse {
+    grid-area: verse;
+}
+
+.content .focus {
+    grid-area: focus;
+}
+
+.content .action {
+    grid-area: action;
+}
+
+.footer {
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    bottom: 0;
+    border-top: 4px solid white;
+    color: white;
+}
