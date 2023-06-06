@@ -27,10 +27,9 @@ header {
     width: auto;
 }
 
-/*.main {
- background: hsla(33, 100%, 88%, 0.5);
- background-blend-mode: overlay;
-}*/
+.main {
+    display: grid;
+}
 
 .grid {
     display: grid;
@@ -45,7 +44,9 @@ header {
     width: 75%;
     grid-template-areas: 
             "verse focus"
-            "verse action";
+            "verse action"
+            "button none";
+
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: transparent;
@@ -82,6 +83,14 @@ header {
 
 .content .action {
     grid-area: action;
+}
+
+.container .button {
+    background-color: hsla(275, 100%, 25%, 1);
+    border: 2px solid hsla(275, 100%, 25%, 1);
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px hsla(275, 100%, 25%, .5);
+    grid-area: button;
 }
 
 .footer {
