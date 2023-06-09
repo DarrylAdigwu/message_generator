@@ -28,20 +28,26 @@ header {
 }
 
 .main {
-    display: grid;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    min-height: 100vh;
-    place-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 85%;
 }
 
 .content {
     display: grid;
     position: relative;
-    width: 75%;
+    width: 100%;
+    height: auto;
     grid-template-areas: 
             "verse focus"
             "verse action"
@@ -54,9 +60,28 @@ header {
     border: none;
 }
 
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: hsla(275, 100%, 25%, 1);
+    color:azure;
+    border: 2px solid hsla(275, 100%, 25%, 1);
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px hsla(275, 100%, 25%, .5);
+}
+
+.shuffle-sign {
+    width: 2rem;
+    height: auto;
+    align-self: center;
+    color: white;
+}
+
 .content h1 {
     font-size: 1.25rem;
-    margin: 1rem;
+    margin-bottom: 1.25rem;
     background-color: none;
 }
 
@@ -68,6 +93,7 @@ header {
     box-shadow: 0 0 4px 4px hsla(275, 100%, 25%, .5);
 }
 .box h1 {
+    margin-bottom: 1.25rem;
     font-size: .75rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -75,14 +101,17 @@ header {
 
 .content .verse {
     grid-area: verse;
+    padding:  1.5rem;
 }
 
 .content .focus {
     grid-area: focus;
+    padding: 1.5rem;
 }
 
 .content .action {
     grid-area: action;
+    padding: 1.5rem;
 }
 
 .container .button {

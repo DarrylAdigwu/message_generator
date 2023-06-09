@@ -1,3 +1,7 @@
+const verseText = document.getElementById('verse');
+const focusText = document.getElementById('focus');
+const actionText = document.getElementById('action-item');
+
 
 //Verses
 const verse1 = "Proverbs 3:5-6 - Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths.";
@@ -41,6 +45,15 @@ let messageObj = {
 
 
 //Random function
-const random = (arr) => {
-    
+const random = (obj) => {
+    let messageArr = [];
+    let objVal = Object.values(obj);
+    for(let i=0; i<objVal.length; i++) {
+        const values = objVal[i];
+        const rand = values[Math.floor(Math.random() * values.length)];
+        messageArr.push(rand);
+    }
+    return messageArr;
 };
+
+console.log(random(messageObj));
