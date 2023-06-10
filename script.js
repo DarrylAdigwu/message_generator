@@ -1,7 +1,7 @@
 const verseText = document.getElementById('verse');
 const focusText = document.getElementById('focus');
 const actionText = document.getElementById('action-item');
-
+const shuffleBtn = document.getElementById('button');
 
 //Verses
 const verse1 = "Proverbs 3:5-6 - Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths.";
@@ -43,8 +43,6 @@ let messageObj = {
     pray: prayer
 };
 
-
-//Random function
 const random = (obj) => {
     let messageArr = [];
     let objVal = Object.values(obj);
@@ -56,4 +54,22 @@ const random = (obj) => {
     return messageArr;
 };
 
-console.log(random(messageObj));
+//Shuffle new messages into display
+shuffleBtn.addEventListener('click', () => {
+    const randomMessage = random(messageObj);
+
+//Variables to store individual messages
+    let randVerse = random(messageObj)[0];
+    let randAction = random(messageObj)[1];
+    let randPrayer = random(messageObj)[2];
+
+    if(randVerse) {
+      verseText.innerText = randVerse; 
+      actionText.innerText = randAction; 
+      focusText.innerText = randPrayer;  
+    }
+});
+
+
+
+
