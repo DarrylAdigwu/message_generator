@@ -128,5 +128,6 @@ header {
     width: 100%;
     bottom: 0;
     border-top: 4px solid white;
-    color: white;
+    color: black;
+    font-weight: 600;
 }
