@@ -21,11 +21,11 @@
 
 body {
     box-sizing: border-box;
-    background-image: url("/resources/images/sunset.jpg");
-    background-color:  hsla(33, 100%, 88%, 0.5);
-    background-size: cover;
-    background-position: 85%;
+    background: url("../images/sunset.jpg"), hsla(33, 100%, 88%, 0.5);
+    background-position: 20%;
     background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: none;
 }
 
 /* Navigation */
