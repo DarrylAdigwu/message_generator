@@ -21,7 +21,7 @@
 
 body {
     box-sizing: border-box;
-    background-image: url("/resources/images/sunset.jpeg");
+    background-image: url("/resources/images/sunset.jpg");
     background-color:  hsla(33, 100%, 88%, 0.5);
     background-size: cover;
     background-position: 85%;
