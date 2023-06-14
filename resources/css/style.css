@@ -72,6 +72,10 @@ header {
     left: 92%;
     top: .15rem;
 }
+.closeBtn:hover {
+    cursor: pointer;
+}
+
 .alert .inform {
     width: 100%;
     margin: 0.5rem .75rem 1rem .75rem;
