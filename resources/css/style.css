@@ -46,7 +46,7 @@ header {
 
 @keyframes slideInFromLeft {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-130%);
     }
     100% {
         transform: translateX(0);
@@ -64,7 +64,7 @@ header {
     border: 2px solid hsla(275, 100%, 25%, 1);
     border-radius: 10px;
     box-shadow: 0 0 4px 4px hsla(275, 100%, 25%, .5);
-    animation: 1s ease-out slideInFromLeft;
+    animation: 2s linear slideInFromLeft;
 }
 
 .closeBtn {
