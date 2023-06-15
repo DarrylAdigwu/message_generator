@@ -108,7 +108,7 @@ header {
             "verse action"
             "button none";
 
-    grid-template-columns: 18rem 18rem;
+    grid-template-columns: 24rem 24rem;
     grid-template-rows: 10rem 10rem;
     background-color: transparent;
     gap: 1rem;
